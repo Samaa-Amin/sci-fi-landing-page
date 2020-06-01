@@ -1,0 +1,334 @@
+body , html{
+    max-width: 100%;
+    margin: 0px;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+
+@font-face{
+    src: url("../414X896/Fonts/ariblk.ttf");
+    font-family: ak;
+}
+@font-face{
+    src: url("../414X896/Fonts/MyriadPro-Regular_0.otf");
+    font-family: myriad;
+}
+@font-face{
+    src: url("../414X896/Fonts/LATINWD_0.TTF");
+    font-family: widlatin;
+}
+@font-face{
+    src: url("../414X896/Fonts/MATURASC_0.TTF");
+    font-family: mat;
+}
+@font-face{
+    src: url("../414X896/Fonts/OLDENGL_0.TTF");
+    font-family: old;
+}
+@font-face{
+    src: url("../414X896/Fonts/chp-fire.ttf");
+    font-family: fire;
+}
+@font-face{
+    src: url("../414X896/Fonts/Fedra12-Bold.otf");
+    font-family:fedra;
+}
+@font-face{
+    src: url("../414X896/Fonts/Subjectivity-Super.otf");
+    font-family:super;
+}
+@font-face{
+    src: url("../414X896/Fonts/Lot.otf");
+    font-family:lot;
+}
+@font-face{
+    src: url("../414X896/Fonts/Subjectivity-Light.otf");
+    font-family:light;
+}
+@font-face{
+    src: url("../414X896/Fonts/Subjectivity-Bold.otf");
+    font-family:bold;
+}
+@font-face{
+    src: url("../414X896/Fonts/OLDENGL_0.TTF");
+    font-family:demo;
+}
+/* ============================top======================================= */
+
+.toplayer-text {
+    max-width: 100%;
+    padding-left: 80px;
+}
+.toplayer-text h1 {
+    font-size: 190px;
+    margin: 0;
+    font-family: ak;
+    font-weight: bolder;
+    line-height: 1.3;
+}
+.toplayer-text span.believe{
+    color:#0000ff;
+    position: relative;
+    z-index: 1;
+}
+.toplayer-text img {
+    position: absolute;
+    top: 4px;
+    right: 69px;
+}
+
+/* logo */
+a.logo{
+    /* transform: rotate(270deg); */
+    writing-mode: vertical-rl;
+    /* text-orientation: mixed; */
+    position: fixed;
+    left: 0px;
+    bottom: 170px; 
+    color: white;
+    background-color: #0000ff;
+    font-size: 14px;
+    padding: 10px 5px;
+    margin: 0;
+}
+/* links */
+.social{
+    position: absolute;
+    top: 33%;
+    right: 7.5%;
+    /* align-items: center; */
+}
+.social i{
+    color: white;
+    font-size: 20px;
+    background-color: #0000ff;
+    padding: 10px;
+    border-radius:50% ; 
+    display: block;
+    margin: 20px;
+}
+.email-number{
+    transform: rotate(-90deg);
+    margin: 0;
+    position: absolute;
+    top: 83%;
+    right: 0%;
+    font-size: 22px;
+    font-weight: bold;
+    color: #0000ff;
+    
+}
+.email-number a{
+    color: #0000ff;
+}
+/* ============================bottom======================================= */
+
+.bottomlayer {
+    background-color: black;
+    position: absolute;
+    padding-top: 10px;
+    top:0px;
+    left: 0;
+    z-index:2;
+    pointer-events: none;
+    user-select: none;
+    clip-path: circle(75px at var(--x) var(--y));
+}
+.bottomlayer h1{
+    font-family: myriad;
+    color: white;
+    line-height: 1.2;
+}
+/* logo */
+.bottomlayer a , .bottomlayer .social i{
+    background-color: #fff800;
+    color: black;
+}
+/* links */
+.bottomlayer .email-number a{
+    color: #fff800;
+    background: none;
+}
+.bottomlayer .social{
+    top: 28%;
+    right: 7.5%;
+}
+.bottomlayer .email-number{
+    top: 70%;
+    color: #fff800;
+}
+
+/* fonts */
+.bottomlayer span.widlatin{
+    font-family: widlatin;
+
+}
+.bottomlayer span.u{
+    font-family: mat;
+}
+.bottomlayer span.s{
+    font-family: old;
+    letter-spacing: 0.1em;
+
+}
+.bottomlayer span.fire{
+    font-family: fire;
+    letter-spacing: 0.1em;
+
+}
+.bottomlayer span.believe{
+    font-family: fedra;
+    color: #fff800;
+    /* font-size: 160px; */
+}
+.bottomlayer span.super{
+    font-family: super;
+}
+.bottomlayer span.lot{
+    font-family: lot;
+}
+.bottomlayer span.light{
+    font-family: light;
+}
+.bottomlayer span.bold{
+    font-family: bold;
+}
+.bottomlayer span.demo{
+    /* font-family: demo; */
+    letter-spacing: 0.15em;
+
+}
+/*===========================responsive====================== */
+@media only screen and (max-width: 800px) {
+    .block{
+        display: block;
+    }
+    .toplayer-text {
+        padding-left: 30px;
+    }
+    .toplayer-text h1  {
+        font-size: 130px;
+    }
+    .toplayer-text img {
+        top: 0px;
+        right: 0%;
+    }
+    .logo-wrapper{
+        background-color: #0000ff;
+        padding: 5px 5px;
+        text-align: center;
+    }
+    .bottomlayer .logo-wrapper{
+        background-color: #fff800;
+    }
+    a.logo {
+        writing-mode: unset;
+        text-align: center;
+        position: static;
+        background: none;
+        
+    }
+    .social i {
+        display: inline;
+        
+    }
+    .social a{
+        background: none;
+        margin: 0;
+    }
+    .social{
+        padding: 17px;
+    }
+    .social ,.email-number{
+        position: static;
+        transform: rotate(0deg);
+    }
+    .email-number{
+        padding-left: 30px;
+    }
+    .bottomlayer .toplayer-text h1{
+        padding-right: 12px;
+    }
+    .bottomlayer{
+        padding-top: 0px;
+        }
+}
+@media only screen and (max-width: 603px) {
+    .toplayer-text h1  {
+        font-size: 100px;
+    }
+    .toplayer-text img {
+        top: -55px;
+        right: 0;
+    }   
+
+    .email-number{
+        padding-bottom: 52px;
+    }
+    .bottomlayer .toplayer-text h1{
+        padding-right: 10px;
+    }
+    .bottomlayer .believe{
+        font-size: 90px;
+    }
+
+}
+@media only screen and (max-width: 533px){
+    .bottomlayer .toplayer-text h1{
+        padding-right: 26px;
+    }
+    
+}
+@media only screen and (max-width: 414px) {
+    .toplayer-text {
+        padding-left: 0px;
+    }
+    .bottomlayer .toplayer-text h1{
+        padding-right: 0px;
+    }
+    .toplayer-text h1  {
+        font-size: 85px;
+        padding-left: 20px;
+    }
+    .bottomlayer span.believe {
+        font-size: 80px;
+
+    }
+    .email-number{
+        margin-left: 20px;
+        padding-bottom: 100px;
+        margin-top: 20px;
+    }
+    .toplayer-text img {
+        top: -55px;
+    }  
+    .social ,.email-number{
+        padding-left: 0;
+    }
+    .bottomlayer .toplayer-text h1{
+        padding-right: 0px;
+    }
+}
+@media only screen and (max-width: 384px) {
+    .toplayer-text h1  {
+        font-size: 74px;
+        padding-left: 5px;
+
+    }
+    .bottomlayer span.believe {
+        font-size: 68px;
+    }
+    
+    .email-number{
+        font-size:16px ;
+        margin-top: 20px;
+    }
+    .social{
+        margin-top: 20px;
+    }
+    .in{
+        display: block;
+    }
+}
